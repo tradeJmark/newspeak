@@ -1,0 +1,36 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.31'
+    id 'antlr'
+    id 'application'
+}
+
+group 'ca.tradejmark.newspeak'
+version '0.0.1-dev1'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'ca.tradejmark.newspeak.NewspeakKt'
+}
+
+run {
+    standardInput = System.in
+    standardOutput = System.out
+}
+
+generateGrammarSource {
+    arguments += ["-visitor", "-no-listener"]
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    antlr "org.antlr:antlr4:4.9.2"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
+}

@@ -1,0 +1,2 @@
+list = [1, 2, 5]
+for each element in list, print element.

@@ -1,0 +1,8 @@
+x is 0.
+while x is less than 5:
+    print x.
+    y is 0.
+    while y is less than x:
+        print y.
+        increment y.
+    increment x.

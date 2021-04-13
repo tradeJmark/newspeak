@@ -1,0 +1,33 @@
+Pi is 3.14.
+CircleArea is a function given radius:
+	Result: Pi * radius^2.
+CirclePerimeter is a function given radius:
+	Result: Pi * r * 2.
+RectangleArea is a function given length, width:
+	Result: Length * width.
+RectanglePerimeter is a function given length, width:
+	Result: Length * 2 + width * 2.
+
+Print "Are you entering a rectangle, or a circle?".
+Read into shape.
+
+Set area to 0.
+Set perimeter to 0.
+
+If shape = "rectangle":
+	Print "Enter the length:".
+	Read a real number into l.
+	Print "Enter the width:".
+	Read a real number into w.
+	Area is the result of rectangleArea with length l, width w.
+	Perimeter is the result of rectanglePerimeter with length l, width w.
+Otherwise:
+	Print "Enter the radius:".
+	Read a real number into r.
+	Area is the result of circleArea with radius r.
+	Perimeter is the result of circlePerimeter with radius r.
+
+Print "Area:".
+Print area.
+Print "Perimeter:".
+Print perimeter.

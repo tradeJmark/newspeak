@@ -1,0 +1,5 @@
+printRadius is a function given circumference:
+    pi is 3.14.
+    print circumference / pi.
+
+run printRadius with circumference 7.
